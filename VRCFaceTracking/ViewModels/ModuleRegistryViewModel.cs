@@ -13,14 +13,16 @@ public partial class ModuleRegistryViewModel : ObservableRecipient, INavigationA
 {
     private readonly IModuleDataService _moduleDataService;
     private readonly ILibManager _libManager;
+    private readonly ILocalSettingsService _settingsService;
     [ObservableProperty] private InstallableTrackingModule? _selected;
 
     public ObservableCollection<InstallableTrackingModule> ModuleInfos { get; } = new();
     
-    public ModuleRegistryViewModel(IModuleDataService moduleDataService, ILibManager libManager)
+    public ModuleRegistryViewModel(IModuleDataService moduleDataService, ILibManager libManager, ILocalSettingsService settingsService)
     {
         _moduleDataService = moduleDataService;
         _libManager = libManager;
+        _settingsService = settingsService;
     }
 
     public async void OnNavigatedTo(object parameter)
@@ -33,7 +35,7 @@ public partial class ModuleRegistryViewModel : ObservableRecipient, INavigationA
         // If any of the IDs match a remote module and the other data contained within does not match,
         // then we need to set the local module install state to outdated. If everything matches then we need to set the install state to installed.
         var installedModules = _moduleDataService.GetInstalledModules().Concat(_moduleDataService.GetLegacyModules());
-        var moduleSettings = await _moduleDataService.GetModuleSettingsAsync();
+        var moduleSettings = await _settingsService.ReadSettingAsync(VRCFaceTracking.Core.Utils.ModuleStateSettingsKey, new Dictionary<string, ModuleEnabledState>());
         var appliedStates = _libManager.AppliedModuleStates;
         var localModules = new List<InstallableTrackingModule>();    // dw about it
         foreach (var installedModule in installedModules)
@@ -44,8 +46,8 @@ public partial class ModuleRegistryViewModel : ObservableRecipient, INavigationA
                 installedModule.State = state;
             }
 
-            var applied = appliedStates.TryGetValue(installedModule.ModuleKey, out var appliedState) ? appliedState : installedModule.State;
-            installedModule.StateBadgeText = ResourceExtensions.BuildBadge(applied, installedModule.State);
+            var applied = appliedStates.TryGetValue(installedModule.ModuleKey, out var appliedState) ? appliedState : (ModuleEnabledState?)null;
+            installedModule.UpdateStateBadge(applied, s => $"ModuleStateText_{s}".GetLocalized());
 
             var remoteModule = data.FirstOrDefault(x => x.ModuleId == installedModule.ModuleId);
             if (remoteModule == null)   // If this module is completely missing from the remote list, then we need to add it to the list.

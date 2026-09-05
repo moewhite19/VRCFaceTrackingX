@@ -17,6 +17,7 @@ public sealed partial class ModuleRegistryDetailControl
     }
 
     private readonly IModuleDataService _moduleDataService;
+    private readonly ILocalSettingsService _settingsService;
     private readonly ModuleInstaller _moduleInstaller;
     private readonly ILibManager _libManager;
     private readonly MainViewModel _mainViewModel;
@@ -28,6 +29,7 @@ public sealed partial class ModuleRegistryDetailControl
     {
         InitializeComponent();
         _moduleDataService = App.GetService<IModuleDataService>();
+        _settingsService = App.GetService<ILocalSettingsService>();
         _moduleInstaller = App.GetService<ModuleInstaller>();
         _libManager = App.GetService<ILibManager>();
         _mainViewModel = App.GetService<MainViewModel>();
@@ -136,10 +138,10 @@ public sealed partial class ModuleRegistryDetailControl
 
         if (isInstalled && module != null)
         {
-            var applied = _libManager.AppliedModuleStates.TryGetValue(module.ModuleKey, out var appliedState) ? appliedState : module.State;
-            module.StateBadgeText = ResourceExtensions.BuildBadge(applied, module.State);
+            var applied = _libManager.AppliedModuleStates.TryGetValue(module.ModuleKey, out var appliedState) ? appliedState : (ModuleEnabledState?)null;
+            module.UpdateStateBadge(applied, s => $"ModuleStateText_{s}".GetLocalized());
             // Only show the restart hint while a state change is still pending (i.e. it differs from the applied state).
-            ModuleEnabledHint.Visibility = applied != module.State ? Visibility.Visible : Visibility.Collapsed;
+            ModuleEnabledHint.Visibility = applied.HasValue && applied.Value != module.State ? Visibility.Visible : Visibility.Collapsed;
         }
         else
         {
@@ -164,11 +166,13 @@ public sealed partial class ModuleRegistryDetailControl
     private async Task SaveModuleSettingsAsync()
     {
         var module = ListDetailsMenuItem;
-        if (module == null)
+        if (module == null || string.IsNullOrEmpty(module.ModuleKey))
         {
             return;
         }
 
-        await _moduleDataService.SaveModuleSettingsAsync(module, module.State);
+        var allSettings = await _settingsService.ReadSettingAsync(VRCFaceTracking.Core.Utils.ModuleStateSettingsKey, new Dictionary<string, ModuleEnabledState>());
+        allSettings[module.ModuleKey] = module.State;
+        await _settingsService.SaveSettingAsync(VRCFaceTracking.Core.Utils.ModuleStateSettingsKey, allSettings);
     }
 }
