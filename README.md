@@ -5,6 +5,14 @@ Provides eye tracking and lip tracking in VRChat by providing a bridge between y
 
 [![Discord](https://discord.com/api/guilds/849300336128032789/widget.png)](https://discord.com/invite/vrcft)
 
+## 🔀 Fork-Specific Changes
+
+This fork adds **module toggles** to the Module Registry so multiple tracking modules can be mixed and switched freely:
+
+- Each installed module can be **enabled / disabled** as a whole.
+- **Eye Tracking** and **Facial Tracking** can be toggled **independently** per module — for example, drive eyes with one module and the face with another, or switch between different face tracking modules, without uninstalling and reinstalling anything.
+- Disabled modules remain installed but are skipped when VRCFT loads; changes take effect after **restarting VRCFT**, and disabled modules are marked with a "Disabled" badge in the module list.
+
 ## 🎥 Demo
 
 [![](https://i.imgur.com/iQkw12C.jpg)](https://youtu.be/ZTVnh8aaf9U)
