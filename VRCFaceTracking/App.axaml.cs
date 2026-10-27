@@ -55,6 +55,8 @@ namespace VRCFaceTracking
                 .Build();
             Ioc.Default.ConfigureServices(_host.Services);
 
+            ApplySavedLanguage();
+
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
                 MainWindow = new MainWindow();
@@ -78,6 +80,34 @@ namespace VRCFaceTracking
             Ioc.Default.GetRequiredService<IActivationService>().ActivateAsync(null);
 
             base.OnFrameworkInitializationCompleted();
+        }
+
+        private void ApplySavedLanguage()
+        {
+            try
+            {
+                var settings = Ioc.Default.GetRequiredService<ILocalSettingsService>();
+
+                // Runs on the thread pool so the async file read cannot deadlock the UI thread.
+                var code = Task.Run(() =>
+                        settings.ReadSettingAsync(VRCFaceTracking.Core.Utils.LanguageSettingsKey, string.Empty))
+                    .GetAwaiter()
+                    .GetResult();
+
+                if (string.IsNullOrWhiteSpace(code))
+                {
+                    return;
+                }
+
+                var culture = new System.Globalization.CultureInfo(code);
+                System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = culture;
+                System.Globalization.CultureInfo.CurrentUICulture = culture;
+            }
+            catch (Exception ex)
+            {
+                // Invalid/unavailable saved culture: fall back to the system language.
+                _logger?.LogWarning(ex, "Failed to apply the saved language");
+            }
         }
 
         private void HandleResetFile()

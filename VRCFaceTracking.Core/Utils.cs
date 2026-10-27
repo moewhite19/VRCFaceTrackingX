@@ -47,6 +47,11 @@ public static class Utils
     /// Local settings key for the persisted per-module enabled-state dictionary.
     /// </summary>
     public const string ModuleStateSettingsKey = "ModuleEnabledState";
+
+    /// <summary>
+    /// Local settings key for the persisted UI language (empty means "follow the system").
+    /// </summary>
+    public const string LanguageSettingsKey = "Language";
     
     public static int GetRandomFreePort()
     {

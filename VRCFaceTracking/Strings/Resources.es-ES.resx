@@ -302,4 +302,16 @@
   <data name="Shell_ReloadModules_Content" xml:space="preserve">
     <value>Recargar módulos</value>
   </data>
+  <data name="LanguageSettings_Header" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="LanguageSettings_Description" xml:space="preserve">
+    <value>Elige el idioma de la interfaz. Es necesario reiniciar para aplicar los cambios.</value>
+  </data>
+  <data name="Language_FollowSystem" xml:space="preserve">
+    <value>Seguir el sistema</value>
+  </data>
+  <data name="Language_RestartHint" xml:space="preserve">
+    <value>Reinicia VRCFT para aplicar el cambio de idioma.</value>
+  </data>
 </root>

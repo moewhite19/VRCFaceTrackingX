@@ -299,4 +299,16 @@
   <data name="Shell_ReloadModules_Content" xml:space="preserve">
     <value>重载模块</value>
   </data>
+  <data name="LanguageSettings_Header" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="LanguageSettings_Description" xml:space="preserve">
+    <value>选择显示语言，更改后需重启生效。</value>
+  </data>
+  <data name="Language_FollowSystem" xml:space="preserve">
+    <value>跟随系统</value>
+  </data>
+  <data name="Language_RestartHint" xml:space="preserve">
+    <value>重启 VRCFT 后语言更改生效。</value>
+  </data>
 </root>

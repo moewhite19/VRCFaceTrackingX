@@ -413,4 +413,16 @@
   <data name="Shell_ReloadModules_Content" xml:space="preserve">
     <value>Reload Modules</value>
   </data>
+  <data name="LanguageSettings_Header" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LanguageSettings_Description" xml:space="preserve">
+    <value>Choose the display language. A restart is required to apply changes.</value>
+  </data>
+  <data name="Language_FollowSystem" xml:space="preserve">
+    <value>Follow the system</value>
+  </data>
+  <data name="Language_RestartHint" xml:space="preserve">
+    <value>Restart VRCFT to apply the language change.</value>
+  </data>
 </root>
