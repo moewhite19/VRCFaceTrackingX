@@ -22,7 +22,7 @@
             </ui:SettingsExpander>
 
             <ui:SettingsExpander Header="{x:Static s:Resources.LanguageSettings_Header}"
-                                 Description="{x:Static s:Resources.LanguageSettings_Description}">
+                                 Description="{x:Static s:Resources.LanguageSettings_Description}" IsExpanded="True">
                 <StackPanel Spacing="8">
                     <ComboBox x:Name="LanguageCombo" MinWidth="200" SelectionChanged="LanguageCombo_SelectionChanged">
                         <ComboBoxItem Content="{x:Static s:Resources.Language_FollowSystem}" Tag="" />
