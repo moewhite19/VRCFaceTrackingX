@@ -21,6 +21,28 @@
                 </ComboBox>
             </ui:SettingsExpander>
 
+            <ui:SettingsExpander Header="{x:Static s:Resources.LanguageSettings_Header}"
+                                 Description="{x:Static s:Resources.LanguageSettings_Description}">
+                <StackPanel Spacing="8">
+                    <ComboBox x:Name="LanguageCombo" MinWidth="200" SelectionChanged="LanguageCombo_SelectionChanged">
+                        <ComboBoxItem Content="{x:Static s:Resources.Language_FollowSystem}" Tag="" />
+                        <ComboBoxItem Content="English" Tag="en-US" />
+                        <ComboBoxItem Content="中文" Tag="zh-CN" />
+                        <ComboBoxItem Content="Español" Tag="es-ES" />
+                        <ComboBoxItem Content="日本語" Tag="ja-JP" />
+                        <ComboBoxItem Content="Polski" Tag="pl-PL" />
+                        <ComboBoxItem Content="한국어" Tag="ko-KR" />
+                    </ComboBox>
+                    <TextBlock
+                        x:Name="LanguageRestartHint"
+                        Text="{x:Static s:Resources.Language_RestartHint}"
+                        FontSize="12"
+                        TextWrapping="Wrap"
+                        Foreground="{DynamicResource SystemFillColorCriticalBrush}"
+                        IsVisible="False" />
+                </StackPanel>
+            </ui:SettingsExpander>
+
             <TextBlock Text="OSC SETTINGS" FontSize="12" FontWeight="SemiBold" Opacity="0.6" Margin="0,16,0,6" />
 
             <ui:SettingsExpander

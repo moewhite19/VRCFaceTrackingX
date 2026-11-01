@@ -344,4 +344,16 @@
   <data name="Shell_ReloadModules_Content" xml:space="preserve">
     <value>モジュールを再読み込み</value>
   </data>
+  <data name="LanguageSettings_Header" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="LanguageSettings_Description" xml:space="preserve">
+    <value>表示言語を選択します。変更を適用するには再起動が必要です。</value>
+  </data>
+  <data name="Language_FollowSystem" xml:space="preserve">
+    <value>システムに従う</value>
+  </data>
+  <data name="Language_RestartHint" xml:space="preserve">
+    <value>言語の変更を適用するには VRCFT を再起動してください。</value>
+  </data>
 </root>

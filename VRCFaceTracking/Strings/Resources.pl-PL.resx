@@ -408,4 +408,16 @@
   <data name="Shell_ReloadModules_Content" xml:space="preserve">
     <value>Przeładuj moduły</value>
   </data>
+  <data name="LanguageSettings_Header" xml:space="preserve">
+    <value>Język</value>
+  </data>
+  <data name="LanguageSettings_Description" xml:space="preserve">
+    <value>Wybierz język interfejsu. Zmiany wymagają ponownego uruchomienia.</value>
+  </data>
+  <data name="Language_FollowSystem" xml:space="preserve">
+    <value>Zgodny z systemem</value>
+  </data>
+  <data name="Language_RestartHint" xml:space="preserve">
+    <value>Uruchom ponownie VRCFT, aby zastosować zmianę języka.</value>
+  </data>
 </root>

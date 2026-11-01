@@ -5,6 +5,7 @@ using Avalonia.Media;
 using Avalonia.Styling;
 using CommunityToolkit.Mvvm.DependencyInjection;
 using FluentAvalonia.Styling;
+using VRCFaceTracking.Core.Contracts.Services;
 using VRCFaceTracking.ViewModels;
 
 namespace VRCFaceTracking.Views;
@@ -13,10 +14,14 @@ public partial class SettingsPage : UserControl
 {
     private SettingsViewModel ViewModel => (SettingsViewModel)DataContext!;
 
+    private readonly ILocalSettingsService _settingsService;
+    private bool _suppressLanguageChange;
+
     public SettingsPage()
     {
         InitializeComponent();
         DataContext = Ioc.Default.GetRequiredService<SettingsViewModel>();
+        _settingsService = Ioc.Default.GetRequiredService<ILocalSettingsService>();
 
         // Show current version
         var version = Assembly.GetExecutingAssembly().GetName().Version;
@@ -32,6 +37,40 @@ public partial class SettingsPage : UserControl
                 _ => 2
             };
         }
+
+        _ = LoadLanguageAsync();
+    }
+
+    private async Task LoadLanguageAsync()
+    {
+        var saved = await _settingsService.ReadSettingAsync(VRCFaceTracking.Core.Utils.LanguageSettingsKey, string.Empty);
+
+        _suppressLanguageChange = true;
+        LanguageCombo.SelectedIndex = LanguageCodeToIndex(saved);
+        _suppressLanguageChange = false;
+    }
+
+    private static int LanguageCodeToIndex(string? code) => code switch
+    {
+        "en-US" => 1,
+        "zh-CN" => 2,
+        "es-ES" => 3,
+        "ja-JP" => 4,
+        "pl-PL" => 5,
+        "ko-KR" => 6,
+        _ => 0,
+    };
+
+    private async void LanguageCombo_SelectionChanged(object? sender, SelectionChangedEventArgs e)
+    {
+        if (_suppressLanguageChange || LanguageCombo.SelectedItem is not ComboBoxItem item)
+        {
+            return;
+        }
+
+        var code = item.Tag?.ToString() ?? string.Empty;
+        await _settingsService.SaveSettingAsync(VRCFaceTracking.Core.Utils.LanguageSettingsKey, code);
+        LanguageRestartHint.IsVisible = true;
     }
 
     private void ThemeCombo_SelectionChanged(object? sender, SelectionChangedEventArgs e)
