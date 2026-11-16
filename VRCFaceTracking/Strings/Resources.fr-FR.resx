@@ -395,4 +395,43 @@
   <data name="Shell_TrackingSettings_Content" xml:space="preserve">
     <value>Options de Tracking</value>
   </data>
+  <data name="ModuleConfig_Description_Text" xml:space="preserve">
+    <value>Choisissez les types de suivi que chaque module installé peut initialiser.</value>
+  </data>
+  <data name="NativeFaceTracking_Text" xml:space="preserve">
+    <value>Suivi facial natif VRC</value>
+  </data>
+  <data name="ModuleConfig_Priority_Text" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Text" xml:space="preserve">
+    <value>Recharger pour appliquer</value>
+  </data>
+  <data name="ModuleConfig_Eye_Text" xml:space="preserve">
+    <value>Œil</value>
+  </data>
+  <data name="ModuleConfig_Expression_Text" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="ModuleConfig_Reload_Button" xml:space="preserve">
+    <value>Recharger les modules</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Tooltip" xml:space="preserve">
+    <value>Vous avez modifié les paramètres des modules. Les changements s&apos;appliquent après rechargement.</value>
+  </data>
+  <data name="Shell_ModuleConfig_Content" xml:space="preserve">
+    <value>Configuration des modules</value>
+  </data>
+  <data name="LanguageSettings_Header" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="LanguageSettings_Description" xml:space="preserve">
+    <value>Choisissez la langue d&apos;affichage. Un redémarrage est nécessaire pour appliquer les changements.</value>
+  </data>
+  <data name="Language_FollowSystem" xml:space="preserve">
+    <value>Suivre le système</value>
+  </data>
+  <data name="Language_RestartHint" xml:space="preserve">
+    <value>Redémarrez VRCFT pour appliquer le changement de langue.</value>
+  </data>
 </root>

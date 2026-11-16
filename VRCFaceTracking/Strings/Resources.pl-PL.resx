@@ -390,6 +390,39 @@
   <data name="HardwareDebug_Description" xml:space="preserve">
     <value>Po prostu pooglądaj sobie swój język</value>
   </data>
+  <data name="Shell_TrackingSettings_Content" xml:space="preserve">
+    <value>Ustawienia śledzenia</value>
+  </data>
+  <data name="ModuleConfig_Description_Text" xml:space="preserve">
+    <value>Wybierz, jakie typy śledzenia może inicjalizować każdy zainstalowany moduł.</value>
+  </data>
+  <data name="NativeFaceTracking_Text" xml:space="preserve">
+    <value>Natywne śledzenie twarzy VRC</value>
+  </data>
+  <data name="ModuleConfig_Priority_Text" xml:space="preserve">
+    <value>Priorytet</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Text" xml:space="preserve">
+    <value>Przeładuj, aby zastosować</value>
+  </data>
+  <data name="ModuleConfig_Eye_Text" xml:space="preserve">
+    <value>Oko</value>
+  </data>
+  <data name="ModuleConfig_Expression_Text" xml:space="preserve">
+    <value>Ekspresja</value>
+  </data>
+  <data name="ModuleConfig_Reload_Button" xml:space="preserve">
+    <value>Przeładuj moduły</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Tooltip" xml:space="preserve">
+    <value>Zmieniłeś ustawienia modułów. Zmiany zaczną obowiązywać po przeładowaniu.</value>
+  </data>
+  <data name="PrivacyPolicyCard_Header" xml:space="preserve">
+    <value>Polityka prywatności</value>
+  </data>
+  <data name="Shell_ModuleConfig_Content" xml:space="preserve">
+    <value>Konfiguracja modułów</value>
+  </data>
   <data name="LanguageSettings_Header" xml:space="preserve">
     <value>Język</value>
   </data>

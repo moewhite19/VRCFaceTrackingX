@@ -326,6 +326,102 @@
   <data name="AutoStartSettings_Description" xml:space="preserve">
     <value>SteamVRの起動時に自動で起動します</value>
   </data>
+  <data name="CalibrationInfluenceSlider_Header" xml:space="preserve">
+    <value>キャリブレーションの影響度</value>
+  </data>
+  <data name="ModuleConfig_Expression_Text" xml:space="preserve">
+    <value>表情</value>
+  </data>
+  <data name="CalibrationEnabledToggle_Header" xml:space="preserve">
+    <value>キャリブレーション有効</value>
+  </data>
+  <data name="ResetVRCFTButton_Header" xml:space="preserve">
+    <value>VRCFTをリセット</value>
+  </data>
+  <data name="ResetButton_Content" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Tooltip" xml:space="preserve">
+    <value>モジュール設定を変更しました。再読み込み後に反映されます。</value>
+  </data>
+  <data name="ModuleConfig_Eye_Text" xml:space="preserve">
+    <value>目</value>
+  </data>
+  <data name="ModuleConfig_Reload_Button" xml:space="preserve">
+    <value>モジュールを再読み込み</value>
+  </data>
+  <data name="ReInitButton_Content" xml:space="preserve">
+    <value>再初期化</value>
+  </data>
+  <data name="CalibrationInfluenceSlider_Description" xml:space="preserve">
+    <value>顔の表情が時間をかけて全体的なキャリブレーションに与える影響の大きさを制御します</value>
+  </data>
+  <data name="ForceRelevancyToggle_Header" xml:space="preserve">
+    <value>関連性を強制</value>
+  </data>
+  <data name="HardwareDebug_Description" xml:space="preserve">
+    <value>舌をじっと見る…？</value>
+  </data>
+  <data name="ResetVRCFTButton_Description" xml:space="preserve">
+    <value>AppDataフォルダーに保存されたVRCFTの全データをリセットします</value>
+  </data>
+  <data name="ResetAvatarConfButton_Header" xml:space="preserve">
+    <value>VRChat設定をリセット</value>
+  </data>
+  <data name="HardwareDebug_Header" xml:space="preserve">
+    <value>ハードウェアデバッグ</value>
+  </data>
+  <data name="TrackingCalibrateButton_Header" xml:space="preserve">
+    <value>キャリブレーション</value>
+  </data>
+  <data name="ContCalibrationToggle_Header" xml:space="preserve">
+    <value>継続的キャリブレーション</value>
+  </data>
+  <data name="CalibrationEnabledToggle_Description" xml:space="preserve">
+    <value>キャリブレーションを有効にするか切り替えます</value>
+  </data>
+  <data name="Shell_ModuleConfig_Content" xml:space="preserve">
+    <value>モジュール構成</value>
+  </data>
+  <data name="ForceReInitButton_Header" xml:space="preserve">
+    <value>強制再初期化</value>
+  </data>
+  <data name="PrivacyPolicyCard_Header" xml:space="preserve">
+    <value>プライバシーポリシー</value>
+  </data>
+  <data name="ModuleConfig_Priority_Text" xml:space="preserve">
+    <value>優先度</value>
+  </data>
+  <data name="ContCalibrationToggle_Description" xml:space="preserve">
+    <value>時間をかけて顔の表情にゆっくり合わせてキャリブレーションします</value>
+  </data>
+  <data name="ModuleConfig_Description_Text" xml:space="preserve">
+    <value>インストール済みの各モジュールが初期化できるトラッキングの種類を選択します。</value>
+  </data>
+  <data name="ForceReInitButton_Description" xml:space="preserve">
+    <value>VRCFTにすべてのモジュールをアンロードして再初期化させます</value>
+  </data>
+  <data name="Shell_TrackingSettings_Content" xml:space="preserve">
+    <value>トラッキング設定</value>
+  </data>
+  <data name="TrackingCalibrateButton_Description" xml:space="preserve">
+    <value>表情がキャリブレーションに与える影響を一時的に強めます</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Text" xml:space="preserve">
+    <value>再読み込みで反映</value>
+  </data>
+  <data name="ResetAvatarConfButton_Description" xml:space="preserve">
+    <value>VRChatのOSC設定データをすべてリセットします（アバター再読み込み時に再生成されます）</value>
+  </data>
+  <data name="NativeFaceTracking_Text" xml:space="preserve">
+    <value>VRCネイティブ顔トラッキング</value>
+  </data>
+  <data name="CalibrateButton_Content" xml:space="preserve">
+    <value>キャリブレーション</value>
+  </data>
+  <data name="ForceRelevancyToggle_Description" xml:space="preserve">
+    <value>関連性を強制して毎フレームすべてのパラメーターを送信します</value>
+  </data>
   <data name="LanguageSettings_Header" xml:space="preserve">
     <value>言語</value>
   </data>

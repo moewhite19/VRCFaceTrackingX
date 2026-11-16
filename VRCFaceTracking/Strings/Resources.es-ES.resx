@@ -284,6 +284,150 @@
   <data name="Shell_TrackingSettings_Content" xml:space="preserve">
     <value>Configuración de Seguimiento</value>
   </data>
+  <data name="ModuleConfig_PendingChanges_Text" xml:space="preserve">
+    <value>Recarga para aplicar</value>
+  </data>
+  <data name="ForceRelevancyToggle_Description" xml:space="preserve">
+    <value>Fuerza el envío de todos los parámetros cada fotograma forzando la relevancia</value>
+  </data>
+  <data name="RiskySettings_Header" xml:space="preserve">
+    <value>Ajustes de riesgo</value>
+  </data>
+  <data name="ContCalibrationToggle_Header" xml:space="preserve">
+    <value>Calibración continua</value>
+  </data>
+  <data name="ResetAvatarConfButton_Description" xml:space="preserve">
+    <value>Restablecer todos los datos de configuración OSC de VRChat (se regenerarán al recargar el avatar)</value>
+  </data>
+  <data name="CalibrationSettings_Header" xml:space="preserve">
+    <value>Ajustes de calibración</value>
+  </data>
+  <data name="ModuleConfig_Priority_Text" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="osc_was_disabled_warning_Description" xml:space="preserve">
+    <value>Notamos que tu OSC estaba desactivado en VRChat y lo hemos activado por ti. Si el juego estaba abierto cuando ocurrió, puede que necesites activarlo manualmente desde el menú rápido. Si no, ¡todo listo!</value>
+  </data>
+  <data name="ReInitButton_Content" xml:space="preserve">
+    <value>Reinicializar</value>
+  </data>
+  <data name="ModuleConfig_Description_Text" xml:space="preserve">
+    <value>Elige qué tipos de seguimiento puede inicializar cada módulo instalado.</value>
+  </data>
+  <data name="PrivacyPolicyCard_Header" xml:space="preserve">
+    <value>Política de privacidad</value>
+  </data>
+  <data name="ResetVRCFTButton_Header" xml:space="preserve">
+    <value>Restablecer VRCFT</value>
+  </data>
+  <data name="HardwareDebug_Description" xml:space="preserve">
+    <value>Supongo que miras tu lengua...</value>
+  </data>
+  <data name="ModuleConfig_Reload_Button" xml:space="preserve">
+    <value>Recargar módulos</value>
+  </data>
+  <data name="ModuleConfig_Eye_Text" xml:space="preserve">
+    <value>Ojo</value>
+  </data>
+  <data name="no_modules_installed_warning_Description" xml:space="preserve">
+    <value>Parece que no tienes módulos instalados.</value>
+  </data>
+  <data name="osc_was_disabled_warning_Title" xml:space="preserve">
+    <value>Ajustes de OSC modificados</value>
+  </data>
+  <data name="AutoStartSettings_Header" xml:space="preserve">
+    <value>Inicio automático</value>
+  </data>
+  <data name="NativeFaceTracking_Text" xml:space="preserve">
+    <value>Seguimiento facial nativo de VRC</value>
+  </data>
+  <data name="Credits_Description" xml:space="preserve">
+    <value>Los nerds que hicieron todo esto posible &lt;3</value>
+  </data>
+  <data name="ResetAvatarConfButton_Header" xml:space="preserve">
+    <value>Restablecer configs de VRChat</value>
+  </data>
+  <data name="OpenLocalStorageCard_Header" xml:space="preserve">
+    <value>Abrir almacenamiento local</value>
+  </data>
+  <data name="OscSettings_Header" xml:space="preserve">
+    <value>Dirección OSC</value>
+  </data>
+  <data name="ResetButton_Content" xml:space="preserve">
+    <value>Restablecer</value>
+  </data>
+  <data name="no_modules_installed_warning_ButtonText" xml:space="preserve">
+    <value>¡Instala algunos desde aquí!</value>
+  </data>
+  <data name="LocalTestAvatarTooltip_Content" xml:space="preserve">
+    <value>Los avatares de prueba locales no son compatibles y causarán problemas</value>
+  </data>
+  <data name="CalibrationEnabledToggle_Description" xml:space="preserve">
+    <value>Activa o desactiva la calibración</value>
+  </data>
+  <data name="CalibrationSettings_Description" xml:space="preserve">
+    <value>Ajusta los datos de seguimiento a tu gusto</value>
+  </data>
+  <data name="ModuleConfig_Expression_Text" xml:space="preserve">
+    <value>Expresión</value>
+  </data>
+  <data name="no_modules_installed_warning_Title" xml:space="preserve">
+    <value>No hay módulos instalados</value>
+  </data>
+  <data name="AutoStartSettings_Description" xml:space="preserve">
+    <value>Iniciar automáticamente al lanzar SteamVR</value>
+  </data>
+  <data name="ContCalibrationToggle_Description" xml:space="preserve">
+    <value>Se calibra lentamente a tus expresiones faciales con el tiempo</value>
+  </data>
+  <data name="CalibrationEnabledToggle_Header" xml:space="preserve">
+    <value>Calibración activada</value>
+  </data>
+  <data name="TrackingCalibrateButton_Description" xml:space="preserve">
+    <value>Aumenta temporalmente la influencia de tus expresiones en la calibración</value>
+  </data>
+  <data name="ForceReInitButton_Header" xml:space="preserve">
+    <value>Forzar reinicialización</value>
+  </data>
+  <data name="ResetVRCFTButton_Description" xml:space="preserve">
+    <value>Restablecer todos los datos que VRCFT guarda en tu carpeta AppData</value>
+  </data>
+  <data name="ThemeSettings_Header" xml:space="preserve">
+    <value>Tema de la aplicación</value>
+  </data>
+  <data name="CalibrationInfluenceSlider_Header" xml:space="preserve">
+    <value>Influencia de la calibración</value>
+  </data>
+  <data name="CalibrationInfluenceSlider_Description" xml:space="preserve">
+    <value>Controla cuánta influencia tienen tus expresiones faciales en la calibración general con el tiempo</value>
+  </data>
+  <data name="RiskySettings_Description" xml:space="preserve">
+    <value>Peligro, peligro. Alto voltaje..</value>
+  </data>
+  <data name="TrackingCalibrateButton_Header" xml:space="preserve">
+    <value>Calibrar</value>
+  </data>
+  <data name="ForceRelevancyToggle_Header" xml:space="preserve">
+    <value>Forzar relevancia</value>
+  </data>
+  <data name="HardwareDebug_Header" xml:space="preserve">
+    <value>Depuración de hardware</value>
+  </data>
+  <data name="ForceReInitButton_Description" xml:space="preserve">
+    <value>Forzar a VRCFT a descargar y reinicializar todos los módulos</value>
+  </data>
+  <data name="CalibrateButton_Content" xml:space="preserve">
+    <value>Calibrar</value>
+  </data>
+  <data name="LocalTestAvatar_Text" xml:space="preserve">
+    <value>Avatar de prueba local detectado</value>
+  </data>
+  <data name="Shell_ModuleConfig_Content" xml:space="preserve">
+    <value>Configuración de módulos</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Tooltip" xml:space="preserve">
+    <value>Has cambiado la configuración de los módulos. Los cambios se aplican tras recargar.</value>
+  </data>
   <data name="LanguageSettings_Header" xml:space="preserve">
     <value>Idioma</value>
   </data>
