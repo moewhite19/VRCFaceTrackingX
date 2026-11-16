@@ -281,4 +281,151 @@
   <data name="You_appear_to_have_no_modules_installed_Text" xml:space="preserve">
     <value>您似乎没有安装任何模块。</value>
   </data>
+  <data name="AutoStartSettings_Description" xml:space="preserve">
+    <value>SteamVR 启动时自动启动</value>
+  </data>
+  <data name="ModuleConfig_Priority_Text" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="CalibrationInfluenceSlider_Description" xml:space="preserve">
+    <value>控制你的面部表情随时间对整体校准的影响程度</value>
+  </data>
+  <data name="CalibrateButton_Content" xml:space="preserve">
+    <value>校准</value>
+  </data>
+  <data name="ContCalibrationToggle_Header" xml:space="preserve">
+    <value>持续校准</value>
+  </data>
+  <data name="no_modules_installed_warning_Title" xml:space="preserve">
+    <value>未安装模块</value>
+  </data>
+  <data name="ForceReInitButton_Description" xml:space="preserve">
+    <value>强制 VRCFT 卸载并重新初始化所有模块</value>
+  </data>
+  <data name="no_modules_installed_warning_Description" xml:space="preserve">
+    <value>你似乎没有安装任何模块。</value>
+  </data>
+  <data name="CalibrationEnabledToggle_Description" xml:space="preserve">
+    <value>切换是否启用校准</value>
+  </data>
+  <data name="Shell_TrackingSettings_Content" xml:space="preserve">
+    <value>追踪设置</value>
+  </data>
+  <data name="RiskySettings_Description" xml:space="preserve">
+    <value>危险，危险。高压……</value>
+  </data>
+  <data name="TrackingCalibrateButton_Description" xml:space="preserve">
+    <value>临时增强表情对校准的影响</value>
+  </data>
+  <data name="NativeFaceTracking_Text" xml:space="preserve">
+    <value>原生 VRC 面部追踪</value>
+  </data>
+  <data name="ForceRelevancyToggle_Header" xml:space="preserve">
+    <value>强制相关性</value>
+  </data>
+  <data name="ReInitButton_Content" xml:space="preserve">
+    <value>重新初始化</value>
+  </data>
+  <data name="ResetButton_Content" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="no_modules_installed_warning_ButtonText" xml:space="preserve">
+    <value>从这里安装一些！</value>
+  </data>
+  <data name="osc_was_disabled_warning_Title" xml:space="preserve">
+    <value>OSC 设置已修改</value>
+  </data>
+  <data name="ModuleConfig_Expression_Text" xml:space="preserve">
+    <value>表情</value>
+  </data>
+  <data name="Credits_Description" xml:space="preserve">
+    <value>让这一切成为可能的大佬们 &lt;3</value>
+  </data>
+  <data name="ResetAvatarConfButton_Header" xml:space="preserve">
+    <value>重置 VRChat 配置</value>
+  </data>
+  <data name="CalibrationSettings_Description" xml:space="preserve">
+    <value>随心所欲地调整追踪数据</value>
+  </data>
+  <data name="ResetAvatarConfButton_Description" xml:space="preserve">
+    <value>重置所有 VRChat OSC 配置数据（重新加载模型时会重新生成）</value>
+  </data>
+  <data name="ThemeSettings_Header" xml:space="preserve">
+    <value>应用主题</value>
+  </data>
+  <data name="Shell_ModuleConfig_Content" xml:space="preserve">
+    <value>模块配置</value>
+  </data>
+  <data name="ContCalibrationToggle_Description" xml:space="preserve">
+    <value>随时间逐渐根据你的面部表情进行校准</value>
+  </data>
+  <data name="ModuleConfig_Reload_Button" xml:space="preserve">
+    <value>重新加载模块</value>
+  </data>
+  <data name="HardwareDebug_Header" xml:space="preserve">
+    <value>硬件调试</value>
+  </data>
+  <data name="ForceReInitButton_Header" xml:space="preserve">
+    <value>强制重新初始化</value>
+  </data>
+  <data name="ResetVRCFTButton_Header" xml:space="preserve">
+    <value>重置 VRCFT</value>
+  </data>
+  <data name="PrivacyPolicyCard_Header" xml:space="preserve">
+    <value>隐私政策</value>
+  </data>
+  <data name="osc_was_disabled_warning_Description" xml:space="preserve">
+    <value>我们注意到你在 VRChat 中关闭了 OSC，已为你开启。如果当时游戏正在运行，你可能需要从快捷菜单中手动开启。否则应该就没问题了！</value>
+  </data>
+  <data name="ModuleConfig_Description_Text" xml:space="preserve">
+    <value>选择每个已安装模块允许初始化的追踪类型。</value>
+  </data>
+  <data name="CalibrationEnabledToggle_Header" xml:space="preserve">
+    <value>启用校准</value>
+  </data>
+  <data name="OscSettings_Header" xml:space="preserve">
+    <value>OSC 地址</value>
+  </data>
+  <data name="TrackingCalibrateButton_Header" xml:space="preserve">
+    <value>校准</value>
+  </data>
+  <data name="LocalTestAvatar_Text" xml:space="preserve">
+    <value>检测到本地测试模型</value>
+  </data>
+  <data name="ResetVRCFTButton_Description" xml:space="preserve">
+    <value>重置 VRCFT 在 AppData 文件夹中存储的所有数据</value>
+  </data>
+  <data name="CalibrationInfluenceSlider_Header" xml:space="preserve">
+    <value>校准影响</value>
+  </data>
+  <data name="CalibrationSettings_Header" xml:space="preserve">
+    <value>校准设置</value>
+  </data>
+  <data name="LocalTestAvatarTooltip_Content" xml:space="preserve">
+    <value>不支持本地测试模型，会导致问题</value>
+  </data>
+  <data name="OpenLocalStorageCard_Header" xml:space="preserve">
+    <value>打开本地存储</value>
+  </data>
+  <data name="RiskySettings_Header" xml:space="preserve">
+    <value>风险设置</value>
+  </data>
+  <data name="ModuleConfig_Eye_Text" xml:space="preserve">
+    <value>眼睛</value>
+  </data>
+  <data name="HardwareDebug_Description" xml:space="preserve">
+    <value>大概就是盯着你的舌头看？</value>
+  </data>
+  <data name="AutoStartSettings_Header" xml:space="preserve">
+    <value>自动启动</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Tooltip" xml:space="preserve">
+    <value>你更改了模块设置。重新加载后生效。</value>
+  </data>
+  <data name="ModuleConfig_PendingChanges_Text" xml:space="preserve">
+    <value>重新加载以应用</value>
+  </data>
+  <data name="ForceRelevancyToggle_Description" xml:space="preserve">
+    <value>通过强制相关性每帧发送所有参数</value>
+  </data>
 </root>
