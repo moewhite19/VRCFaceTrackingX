@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
@@ -12,6 +12,11 @@ namespace VRCFaceTracking.Core;
 /// </summary>
 public static class Utils
 {
+    /// <summary>
+    /// Local settings key for the persisted UI language (empty means "follow the system").
+    /// </summary>
+    public const string LanguageSettingsKey = "Language";
+
     // Timer resolution helpers
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Interoperability", "CA1401:PInvokesShouldNotBeVisible"), System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2118:ReviewSuppressUnmanagedCodeSecurityUsage"), SuppressUnmanagedCodeSecurity]
     [DllImport("winmm.dll", EntryPoint = "timeBeginPeriod", SetLastError = true)]
