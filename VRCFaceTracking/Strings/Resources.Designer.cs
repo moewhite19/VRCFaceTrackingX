@@ -393,6 +393,42 @@ namespace VRCFaceTracking.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Follow the system.
+        /// </summary>
+        public static string Language_FollowSystem {
+            get {
+                return ResourceManager.GetString("Language_FollowSystem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart VRCFT to apply the language change..
+        /// </summary>
+        public static string Language_RestartHint {
+            get {
+                return ResourceManager.GetString("Language_RestartHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose the display language. A restart is required to apply changes..
+        /// </summary>
+        public static string LanguageSettings_Description {
+            get {
+                return ResourceManager.GetString("LanguageSettings_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string LanguageSettings_Header {
+            get {
+                return ResourceManager.GetString("LanguageSettings_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last Updated.
         /// </summary>
         public static string LastUpdated_Text {
